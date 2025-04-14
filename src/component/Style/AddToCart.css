@@ -1,0 +1,137 @@
+/* General Styles */
+.add-to-cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+  
+  .colors {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .colors p {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .btnStyle {
+    width: 3rem; /* Width of the color button */
+    height: 3rem; /* Height of the color button */
+    gap: 3rem;
+    border-radius: 50%; /* Circle shape */
+    border: 2px solid #ccc; /* Default border */
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .btnStyle.active {
+    border-color: #007bff; /* Blue border when active */
+    margin: 10px;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Blue glowing effect */
+  }
+  
+  .checkStyle {
+    font-size: 1.8rem;
+    color: rgb(253, 251, 251);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Cart Amount Toggle */
+  .cart-amount-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .add-to-cart-btn {
+    background-color: #bcefbc;
+    color: rgb(9, 8, 8);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #9a65f1;
+  }
+  
+  
+  /* Out of Stock Message */
+  .out-of-stock-message {
+    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .add-to-cart-container {
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .colors {
+      flex-direction: row;
+      gap: 0.3rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+  
+    .btnStyle {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .cart-amount-toggle {
+      gap: 0.5rem;
+    }
+  
+    .add-to-cart-btn {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .add-to-cart-container {
+      gap: 1rem;
+    }
+  
+    .colors p {
+      font-size: 1.2rem;
+    }
+  
+    .btnStyle {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .cart-amount-toggle button {
+      padding: 0.4rem 1rem;
+      font-size: 1.4rem;
+    }
+  
+    .add-to-cart-btn {
+      padding: 1rem;
+      font-size: 1.4rem;
+    }
+  
+    .out-of-stock-message {
+      font-size: 1.2rem;
+    }
+  }
+  

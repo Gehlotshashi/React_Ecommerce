@@ -1,0 +1,22 @@
+.brand-section{
+    padding: 4rem 0 0 4rem;
+  }
+  h3{
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  img{
+    min-width: 10rem;
+    height: 10rem;
+  }
+  .brand-section-slider{
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }

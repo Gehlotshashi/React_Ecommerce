@@ -1,0 +1,152 @@
+/* Cart Item Layout */
+.cart_heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  /* Image and Product Info */
+  .cart-image--name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align:center;
+    margin-left: 20px;
+  }
+  
+  .cart-image--name figure {
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .cart-image--name img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Product Details */
+  .cart-image--name p {
+    font-weight: 700;
+    font-size: medium;
+    margin-bottom: 0.4rem;
+  }
+  
+  .color-div {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+  }
+  
+  .color-style {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  
+  /* Price, Subtotal & Quantity Formatting */
+  .cart-hide {
+    display: block;
+    margin-left: 10px;
+  }
+  
+  .cart-hide p {
+    font-size: 1.5rem;
+    color: #0b0b0b;
+    margin-top: 0.3rem;
+  }
+
+  .cartItem-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* If your CartAmountToggle has buttons like + and - with a number between */
+  .cartItem-quantity button {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    background-color: #090909;
+    border: none;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cartItem-quantity button:hover {
+    background-color: #007bff;
+    color: rgb(20, 15, 15);
+  }
+  
+  .cartItem-quantity span {
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  /* Remove Icon */
+  .remove_icon {
+    font-size: 2.5rem;
+    color: #3ce7c2;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .remove_icon:hover {
+    transform: scale(1.2);
+    color: #c0392b;
+  }
+  
+  /* === Responsive Design === */
+  @media (max-width: 768px) {
+    .cart_heading {
+      grid-template-columns: 1.5fr 1fr 0.5fr;
+    }
+  
+    .cart-hide {
+      display: none;
+    }
+  
+    .cart-image--name figure {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .cart-image--name p {
+      font-size: 0.95rem;
+    }
+  
+    .remove_icon {
+      font-size: 1.3rem;
+    }
+  }
+  /* Optional: Responsive tweaks */
+  @media (max-width: 768px) {
+    .cartItem-quantity {
+      flex-direction: row;
+    }
+  
+    .cartItem-quantity button {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+    }
+  
+    .cartItem-quantity span {
+      font-size: 0.95rem;
+    }
+  }
+  

@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Background color remains the same */
+  }
+  
+  .listview-section {
+    padding: 50px 0;
+  }
+  
+  .listview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Card Styles */
+  .listview-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  .listview-card:hover {
+    transform: translateY(-10px); /* Moves the card 10px up on hover */
+  }
+  
+  
+  .listview-card-image {
+    flex: 0 0 40%; /* Image takes 40% of the space */
+    padding-right: 20px;
+  }
+  
+  .listview-card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .listview-card-data {
+    flex: 1; /* This takes the remaining space */
+  }
+  
+  /* Styling for Name */
+  .listview-card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for Price */
+  .listview-card-data--price {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for Description */
+  .listview-card-description {
+    font-size: 1.6rem;
+    color: #444444; /* Light black color */
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .listview-card-btn .listview-btn {
+    padding: 10px 20px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .listview-card-btn .listview-btn:hover {
+    background-color: #6cf87c;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .listview-card {
+      flex-direction: column; /* Stack the image and text vertically on small screens */
+    }
+  
+    .listview-card-image {
+      flex: none;
+      margin-bottom: 20px;
+      width: 100%; /* Image takes full width */
+    }
+  
+    .listview-card-data {
+      flex: 1;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .listview-card-title {
+      font-size: 1.8rem;
+    }
+  
+    .listview-card-description {
+      font-size: 1.4rem;
+    }
+  
+    .listview-card-data--price {
+      font-size: 1.6rem;
+    }
+  }
+  
+
+  
+  
+  
+  
+  

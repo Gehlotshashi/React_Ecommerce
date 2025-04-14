@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+  }
+  
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .grid-two-column {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 3px;
+  }
+  .grid-three-column {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 3px;
+  }
+  .hero-section-data {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .hero-section-data p.intro-data {
+    font-size: 1.5rem;
+    color: #ff6347;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section-data h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .hero-section-data p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 80%;
+  }
+  
+  .hero-section-data button {
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-section-data button:hover {
+    background-color: #4aeb26;
+  }
+  
+  .hero-section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(194, 12, 12, 0.1); 
+    border-radius: 10px; 
+  }
+  
+  .hero-section-image figure {
+    margin: 20px; 
+    width: 100%;
+  }
+  
+  .hero-section-image .img-style {
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(65, 13, 235, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+  
+    .grid-two-column {
+        grid-template-columns: 1fr;
+    }
+  
+    .hero-section-data {
+        padding: 30px 20px;
+        text-align: center;
+    }
+  
+    .hero-section-data h1 {
+        font-size: 2.5rem;
+    }
+  
+    .hero-section-data p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+  
+    .hero-section-data button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+  
+    .hero-section-image {
+        display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section-data h1 {
+        font-size: 2rem;
+    }
+  
+    .hero-section-data p {
+        font-size: 0.9rem;
+    }
+  
+    .hero-section-data button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+  }

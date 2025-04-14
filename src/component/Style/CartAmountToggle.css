@@ -1,0 +1,61 @@
+
+.cart-button {
+    display: flex;
+    justify-content:left; /* Align cart button in the center */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .amount-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Gap between buttons and amount */
+  }
+  
+  .amount-toggle button {
+    background-color: #0b0a0acd; /* Light background for buttons */
+    border: 1px solid #ddd; /* Light border around buttons */
+    border-radius: 50%; /* Circular button shape */
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Same font size for all buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .amount-toggle button:hover {
+    background-color: #00e682; /* Red background on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  .amount-style {
+    font-size: 1.8rem; /* Same font size for amount */
+    font-weight: bold;
+    color: #050505; /* Dark color for the amount */
+    margin: 0 8px; /* Space between amount and buttons */
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .cart-button {
+      flex-direction: column; /* Stack the button and amount vertically on smaller screens */
+      gap: 15px; /* Space between the amount and buttons */
+    }
+  
+    .amount-toggle {
+      flex-direction: row; /* Keep buttons in a row for mobile */
+      gap: 15px;
+    }
+  
+    .amount-style {
+      font-size: 1.2rem; /* Slightly smaller font size for mobile */
+    }
+  
+    .amount-toggle button {
+      font-size: 1.5rem; /* Same size for mobile */
+      padding: 8px; /* Smaller padding for buttons on mobile */
+    }
+  }

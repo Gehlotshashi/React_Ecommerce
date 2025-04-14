@@ -1,0 +1,209 @@
+/* === Filter Section === */
+
+.filter-search,
+.filter-category,
+.filter-company,
+.filter-colors,
+.filter_price,
+.filter-clear {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* === Search Input === */
+.filter-search input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.filter-search input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* === Headings === */
+.filter-category h3,
+.filter-company h3,
+.filter-colors h3,
+.filter_price h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* === Category Buttons === */
+.filter-category div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-category button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.filter-category button:hover,
+.filter-category button:focus,
+.filter-category button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* === Company Dropdown === */
+.filter-company--select {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* === Color Filters === */
+.filter-color-style {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Color circle button */
+.btnStyle {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.btnStyle.active {
+  border: 2px solid #000;
+  outline: 2px solid #007bff;
+}
+
+/* "All" button for colors */
+.color-all--style {
+  padding: 6px 12px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.color-all--style:hover,
+.color-all--style.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* === Price Filter === */
+.filter_price p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.filter_price input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+/* === Clear Filters Button === */
+.clear-btn {
+  margin-top: 1rem;
+  padding: 10px 18px;
+  font-size: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-btn:hover,
+.clear-btn:focus {
+  background-color: #c82333;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 768px) {
+  .filter-search,
+  .filter-category,
+  .filter-company,
+  .filter-colors,
+  .filter_price,
+  .filter-clear {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .filter-category div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .filter-company--select,
+  .filter-search input[type="text"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .filter-category div {
+    flex-direction: column;
+  }
+
+  .filter-category button,
+  .filter-company--select,
+  .filter-search input[type="text"] {
+    width: 100%;
+  }
+
+  .filter-color-style {
+    flex-direction: column;
+  }
+
+  .btnStyle,
+  .color-all--style {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .filter-category button,
+  .filter-company--select {
+    padding: 12px;
+  }
+
+  .btnStyle.active,
+  .color-all--style.active {
+    border: 2px solid #007bff;
+    outline: none;
+  }
+}

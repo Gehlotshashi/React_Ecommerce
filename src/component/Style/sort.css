@@ -1,0 +1,85 @@
+Global Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  
+  .sort-section {
+    display: flex; /* Flex for row layout */
+    justify-content: space-between; /* Spread items across the row */
+    align-items: center; /* Vertically align items */
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+  }
+  
+  .sorting-list-grid, .product-data, .sort-selection {
+    flex: 1; /* Each section takes up equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sorting-list-grid {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    background-color: #333;
+    text-align: center;
+    border-radius: var(--border-radius);
+  }
+  
+  .product-data {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .sort-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sort-selection select {
+    background-color: #333;
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 1.6rem;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .sort-section {
+      flex-direction: column; /* Stack the columns in a column on smaller screens */
+      gap: 1rem; /* Reduce space between items */
+    }
+  
+    .sorting-list-grid, .product-data, .sort-selection {
+      flex: none; /* Remove equal space distribution */
+      width: 100%; /* Full width for each item */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sort-selection select {
+      font-size: 1.4rem;
+    }
+  
+    .sorting-list-grid, .product-data, .sort-selection {
+      font-size: 1.4rem;
+    }
+  } 
+  

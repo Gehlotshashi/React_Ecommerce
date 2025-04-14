@@ -1,0 +1,226 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* Single Product Section */
+  .single-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+  }
+  
+  .single {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Image on the left, details on the right */
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .product-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product Data */
+  .product-data {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .product-data h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Stars and Reviews */
+  .product-data .product-rating {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Prices */
+  .product-data .product-data-price {
+    font-size: 1.6rem;
+    color: #888;
+    margin-bottom: 1rem;
+  }
+  
+  .product-data .product-data-real-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f39c12; /* Bright color for deal */
+  }
+  
+  .product-data del {
+    color: #888;
+    font-size: 1.4rem;
+  }
+  
+  /* Description */
+  .product-data p {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+  
+  /* Warranty Section */
+  .product-data-warranty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .product-warranty-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .warranty-icon {
+    font-size: 2.5rem;
+    color: #0fe7b8; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+  }
+  
+  .product-warranty-data p {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  
+  /* Product Info (ID, Availability, Brand) */
+  .product-data-info {
+    margin-top: 1.5rem;
+  }
+  
+  .product-data-info p {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  
+  .product-data-info span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Add to Cart */
+  .product-data-info button {
+    background-color: #f39c12;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-data-info button:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .single {
+      grid-template-columns: 1fr; /* Stacks the image and data on smaller screens */
+      gap: 1rem;
+    }
+  
+    .product-image img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .product-data {
+      padding: 1rem;
+    }
+  
+    .product-data h2 {
+      font-size: 2rem;
+    }
+  
+    .product-data-price {
+      font-size: 1.4rem;
+    }
+  
+    .product-data-real-price {
+      font-size: 1.8rem;
+    }
+  
+    .product-warranty-data {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .product-data-info p {
+      font-size: 1.4rem;
+    }
+  
+    .product-data-info button {
+      width: 100%;
+      padding: 1.2rem;
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .single-container {
+      padding: 1rem;
+    }
+  
+    .product-data h2 {
+      font-size: 1.8rem;
+    }
+  
+    .product-data-price {
+      font-size: 1.2rem;
+    }
+  
+    .product-data-real-price {
+      font-size: 1.6rem;
+    }
+  
+    .product-data-info p {
+      font-size: 1.2rem;
+    }
+  }
+  
+
