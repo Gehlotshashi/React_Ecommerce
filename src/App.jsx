@@ -7,7 +7,7 @@ import { Contact } from "./pages/Contact";
 import { AppLayout } from "./component/Layout/AppLayout";
 import { ErrorPage } from "./component/UI/ErrorPage";
 import { Cart } from "./pages/Cart";
-import { SingleProduct } from "./component/UI/singleProduct";
+import { SingleProduct } from "./component/UI/singleProduct.jsx";
 
 const router = createBrowserRouter([
 
